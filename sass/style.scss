@@ -1,0 +1,78 @@
+@use 'variables';
+@use 'initial';
+
+.container__adviceMain {
+    width: 345px;
+    height: 315px;
+    margin: auto;
+    margin-top: 120px;
+
+    padding: 40px 25px;
+    background-color: variables.$Dark-Grayish-Blue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: center;
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 0.6em;
+        margin-bottom: 30px;
+        color: variables.$Neon-Green;
+        letter-spacing: 5px;
+    }
+    &__msg {
+        color: variables.$Light-Cyan;
+        font-size: 0.8em;
+        padding-bottom: 30px;
+    }
+    &__content {
+        height: 230px;
+        background-image: url(./images/pattern-divider-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        margin-bottom: 20px;
+    }
+    &__btn {
+        position: relative;
+        width: 65px;
+        height: 65px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        border: none;
+        align-items: center;
+        background-color: variables.$Neon-Green;
+
+        & img {
+            margin: auto;
+            width: 24px;
+            height: 24px;
+        }
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0em 0em 1em 0.3em variables.$Neon-Green;
+        }
+    }
+    @media (min-width: 1440px) {
+        width: 490px;
+        height: 300px;
+        &__content {
+            height: 210px;
+            background-image: url('./images/pattern-divider-desktop.svg');
+        }
+    }
+}
+.attribution {
+    margin-top: 60px;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    text-decoration: none;
+    color: variables.$Neon-Green;
+}
