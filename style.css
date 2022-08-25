@@ -11,12 +11,14 @@ body {
   font-weight: 800;
   background-color: hsl(218deg, 23%, 16%);
 }
+
 .container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .container__adviceMain {
   width: 345px;
   height: 315px;
@@ -72,11 +74,12 @@ body {
 }
 @media (min-width: 1440px) {
   .container__adviceMain {
-    width: 490px;
-    height: 300px;
+    width: 550px;
+    height: 340px;
   }
   .container__adviceMain__content {
-    height: 210px;
+    height: 230px;
+    margin-bottom: 40px;
     background-image: url("./images/pattern-divider-desktop.svg");
   }
 }
