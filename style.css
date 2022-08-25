@@ -11,12 +11,15 @@ body {
   font-weight: 800;
   background-color: hsl(218deg, 23%, 16%);
 }
-
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container__adviceMain {
   width: 345px;
   height: 315px;
-  margin: auto;
-  margin-top: 120px;
   padding: 40px 25px;
   background-color: hsl(217deg, 19%, 24%);
   border-radius: 10px;
