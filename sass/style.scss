@@ -1,12 +1,14 @@
 @use 'variables';
 @use 'initial';
-
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container__adviceMain {
     width: 345px;
     height: 315px;
-    margin: auto;
-    margin-top: 120px;
-
     padding: 40px 25px;
     background-color: variables.$Dark-Grayish-Blue;
     border-radius: 10px;
@@ -59,15 +61,17 @@
         }
     }
     @media (min-width: 1440px) {
-        width: 490px;
-        height: 300px;
-        margin-top: 25vh;
+        width: 550px;
+        height: 340px;
+
         &__content {
-            height: 210px;
+            height: 230px;
+            margin-bottom: 40px;
             background-image: url('./images/pattern-divider-desktop.svg');
         }
     }
 }
+
 .attribution {
     margin-top: 60px;
     font-size: 11px;
